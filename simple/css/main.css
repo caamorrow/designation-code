@@ -57,7 +57,7 @@ a:hover + .page-indicator, a:active + .page-indicator, a.active-nav + .page-indi
 	margin-top: 12px;
 }
 
-a:hover, a:active, a.active-nav { /* Third is a temp 'hack' to make home page show active state */
+a:hover, a:active, a.active-nav {  Third is a temp 'hack' to make home page show active state 
 	color: #f63c3c;
 }
 
@@ -147,14 +147,47 @@ h2 {
 }*/
 
 article {
-	width: 48%;
+	width: 50%;
 	float:left;
-	margin-left: 10px;
-	margin-right: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
 }
 
 article img {
 	width: 100%;
+}
+
+h3 {
+	margin-top: 25px;
+	text-align: center;
+}
+
+h3 a {
+	text-decoration: none;
+	font: 30px 'Teko', sans-serif;
+	color: #000;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+figcaption {
+	display:none;
+}
+
+article:hover figcaption {
+	display: inline;
+	background: #f63c3c;
+	position: absolute;
+}
+
+article>p {
+	font: 300 14px 'Titillium Web', sans-serif;
+	color: #555;
+	text-align: center;
+	max-width: 65%;
+	margin: 0 auto;
+	line-height: 18px;
+	margin-bottom: 35px;
 }
 
 
