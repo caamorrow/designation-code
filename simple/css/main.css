@@ -15,8 +15,8 @@
 .container{
 	max-width: 1200px;
 	margin: 0px auto;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .hide {
@@ -27,9 +27,12 @@
 	float: left;
 }
 
-header {
+.top-header {
 	height: 70px;
 	background-color: #fff;
+	position: fixed;
+	z-index: 100;
+	width:100%;
 }
 
 header nav ul {
@@ -50,14 +53,14 @@ header nav a {
 	color: rgba(0,0,0,0.5);
 }
 
-a:hover + .page-indicator, a:active + .page-indicator, a.active-nav + .page-indicator { /* Third is a temp 'hack' to make home page show active state */
+header a:hover + .page-indicator, header a:active + .page-indicator, header a.active-nav + .page-indicator { /* Third is a temp 'hack' to make home page show active state */ 
 	background-color: #f63c3c;
 	width: 100%;
 	height:4px;
 	margin-top: 12px;
 }
 
-a:hover, a:active, a.active-nav {  Third is a temp 'hack' to make home page show active state 
+header a:hover, header a:active, header a.active-nav {  
 	color: #f63c3c;
 }
 
@@ -68,6 +71,7 @@ a:hover, a:active, a.active-nav {  Third is a temp 'hack' to make home page show
 	height: 1012px;
 	text-align: center;
 	position: relative;
+	height: 100vh;
 }
 
 h1 {
@@ -142,15 +146,12 @@ h2 {
 	margin: 0px 10px;
 }
 
-/*article:nth-of-type(1), article:nth-of-type(3) {
-	margin-right: 20px;
-}*/
-
 article {
 	width: 50%;
 	float:left;
 	padding-right: 10px;
 	padding-left: 10px;
+	position: relative;
 }
 
 article img {
@@ -171,13 +172,20 @@ h3 a {
 }
 
 figcaption {
-	display:none;
+	/*display:none;*/
+	/* opacity:0? ;*/
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 100;
+	width:90%;
+	height:90%;
+	background: #f63c3c;
 }
 
 article:hover figcaption {
-	display: inline;
-	background: #f63c3c;
-	position: absolute;
+	/*display: inline;*/
+
 }
 
 article>p {
