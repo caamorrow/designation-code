@@ -224,7 +224,7 @@ footer li{
 }
 
 .submenu > ul.container {
-	padding-top: 520px;
+	padding-top: 420px;
 }
 
 .submenu .fa {
@@ -234,6 +234,7 @@ footer li{
 }
 
 .submenu footer {
+	padding-top: 100px;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	display:block;
